@@ -8,11 +8,8 @@ mydata$Time <- strptime(paste(mydata$Date,mydata$Time, sep = " "), "%Y-%m-%d %H:
 
 SampleData <- mydata[mydata$Date == "2007-02-01" | mydata$Date == "2007-02-02",]
 
-
 png(file = "./plot2.png")
 
 plot(SampleData$Time, SampleData$Global_active_power, type = "l", xlab = "" , ylab = "Global Active Power (kilowatts)")
 
 dev.off()
-
-

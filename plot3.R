@@ -8,7 +8,6 @@ mydata$Time <- strptime(paste(mydata$Date,mydata$Time, sep = " "), "%Y-%m-%d %H:
 
 SampleData <- mydata[mydata$Date == "2007-02-01" | mydata$Date == "2007-02-02",]
 
-
 png(file = "./plot3.png")
 
 plot(SampleData$Time, SampleData$Sub_metering_1, type = "n", xlab = "", ylab = "Energy sub metering")
